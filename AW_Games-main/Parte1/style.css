@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding : 0px;
+    font-family:Tahoma;
+}
+  
+body{     
+     background-color:white;
+}
+
+ul {
+    list-style: none;
+}
+  
+  /*Barra de navegacion*/
+  
+.navbar_wrapper {
+    background-color: #333;
+    overflow: hidden;
+    width: auto;
+}
+  
+.navbar_wrapper a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar1 a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+    border-radius: 20px;
+}
+  
+.navbar1 {
+    margin:  10px;
+    position: relative;
+    left:  80px;
+    top : -5px;
+}
+  
+  /*Icono de la barra*/
+div .icon img{
+    position: absolute;
+    width:  90px;
+    margin-top:  -40px;
+}
+  
+.content_wrapper {
+    width:  auto;
+    height:  1000px;
+    background: #fff;
+    margin:  0 auto;
+}
+  
+.content_wrapper h1{
+    text-align: center;
+}
+  
+h1{
+    margin-top:20px ;
+}
+  
+.content_texto, .titulo {
+    padding : 29px 29px 0px;
+}
+  
+.fondo {
+    background-color: #5900ff;
+  
+}
+  
+.diagramaG img, .img img {
+    width: 95%;
+    padding:29px 29px 0px;
+
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #008CBA;
+}
+
+
+fieldset{
+  border-radius:10px 10px 10px 10px;
+  font-size:14px;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+/*Enlaces de miembros*/
+.nombres{
+  left: 100px;
+  top: 200px;
+  position: fixed; 
+}
+
+/*Imformaciones de miembros*/
+.informacion{
+padding-left: 450px;
+padding-top: 30px;
+background:white;
+}
+
+.boceto_background {
+  width:  auto;
+  height:  2750px;
+  background: #fff;
+  border:  1px solid #e5e5e5;
+  margin:  0 auto;
+}
+
+.boceto_background h1{
+    text-align: center;
+}

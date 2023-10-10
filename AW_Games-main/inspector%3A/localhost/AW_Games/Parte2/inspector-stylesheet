@@ -1,0 +1,4 @@
+a.linkComunidad {
+    display: inline;
+    width: 50%;
+}

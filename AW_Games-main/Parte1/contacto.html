@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contacto</title>
+    <link rel="icon" href="img/logoAWSD.png">
+    <link rel="stylesheet" href="style.css">
+
+<body>
+
+    <div class="navbar_wrapper">
+        <nav>
+
+            <div class="icon">
+                <a href="index.html">
+                    <img src="img/logoAWSD.png" alt="logo"> </a>
+            </div>
+
+            <div class="navbar1">
+                <ul>
+                    <li> <a href="index.html"> Página inicio</a> </li>
+                    <li> <a href="detalles.html">Detalles</a> </li>
+                    <li> <a href="bocetos.html">Bocetos</a> </li>
+                    <li> <a href="miembros.html">Miembros</a> </li>
+                    <li> <a href="planificacion.html">Plan detallado</a> </li>
+                    <li> <a href="contacto.html">Contacto</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div style="text-align: center;">
+
+        <br>
+        <p>Puedes contactarnos enviandonos a través de este correo <a href="mailto:xinzhu@ucm.es">xinzhu@ucm.es</a> o mediante el siguiente formulario.</p>
+
+    </div>
+
+    <div style="text-align: center;">
+
+        <br><br>
+        <h1> Formulario Contacto</h1>
+
+    </div>
+
+    <br><br>
+
+
+    <div style="display: flex;justify-content: center;">
+
+        <fieldset style="width: 70%; text-align: center;">
+
+            <br><br>
+            <p>Nombre <input type="text" name="nom"></p><br>
+            <p>Email <input type="text" name="email"></p><br>
+
+           <div style="display: flex;justify-content: center;">
+            <fieldset style="width: 50%;">
+                <legend>Motivo de consulta</legend>
+                <label>
+                    <input type="radio" name="motivo" value="Evaluación"> Evaluación
+                </label>
+                <label>
+                    <input type="radio" name="motivo" value="Sugerencia"> Sugerencia
+                </label>
+                <label>
+                    <input type="radio" name="motivo" value="Crítica"> Crítica
+                </label>
+            </fieldset>
+           </div>
+
+            <br>
+            <p>Escribe aquí tu consulta</p>
+            <p><input type="text" style="width: 30%;height: 200px;" name="consulta"></p><br>
+
+            <label><input type="checkbox" name="cbox1" checked> Marque esta casilla para verificar
+                que ha leído nuestros términos y condiciones del servicio</label><br>
+
+
+        </fieldset>
+
+    </div>
+    <br>
+    <div style="text-align: center;"><button type="submit" class="button button1"><a href="mailto:xinzhu@ucm.es">Enviar</a></button></div>
+
+
+
+</body>
+
+</html>

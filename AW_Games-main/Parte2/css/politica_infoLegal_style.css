@@ -1,0 +1,37 @@
+
+.polit_content_wrapper {
+    width:  auto;
+    height:  auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.miembros_wrapper {
+    width:  auto;
+    height:  2250px;
+    margin:  0 auto;
+}
+  
+
+.titulo{
+    font-size:150%;
+}
+  
+.content_texto, .titulo {
+    padding : 70px 29px 0px;
+}
+
+p {
+    font-weight: normal;
+    font-size:100%;
+  }
+  
+apartado {
+    font-weight:400;
+    font-size:150%;
+}
+
+subapartado{
+text-decoration: underline
+}
+

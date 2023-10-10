@@ -1,0 +1,728 @@
+/*Estilo comun de todas las paginas*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Tahoma;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    height: 100%;
+    /*para poner footer siempre abajo*/
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+div#contenedor1 {
+    width: 100%;
+    /*è¿˜éœ€è¦ä¿®æ”¹*/
+    margin: auto;
+    margin-top: 0px;
+    height: 789px;
+    ;
+}
+
+/*Navegador*/
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #061018;
+    box-shadow: 0 1px 6px 0 rgba(79, 79, 79, 0.384);
+}
+
+
+
+.navbar a,
+.nav-link ul li span {
+
+    color: #d1d0d0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif, arial;
+    letter-spacing: .055em;
+    font-size: .825em;
+
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-left {
+    position: relative;
+}
+
+.navbar .nav-link a:hover {
+    color: #ffffff;
+    height: 20px;
+    /* border-bottom: 4px solid #53a4e6;*/
+}
+
+
+.navbar .logo {
+
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/*
+.navbar .nav-link ul {
+    display: flex;
+}*/
+
+.navbar .nav-link ul li {
+    margin: 0 25px;
+    position: relative;
+}
+
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 35px;
+
+}
+
+.navbar img {
+    position: absolute;
+    width: 90px;
+    margin-top: -40px;
+}
+
+
+@media screen and (max-width:900px) {
+    .navbar {
+        padding: 40px;
+        background-color: #061018;
+    }
+
+    .navbar .menu {
+        z-index: 2;
+        display: block;
+    }
+
+    .nav-link {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #273541;
+        backdrop-filter: blur(8px);
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-link.mobile-menu {
+        position: absolute;
+        margin-left: 0;
+        overflow-y: hidden;
+    }
+
+
+
+    .nav-link ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-link ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+
+}
+
+/*navegador desplegable*/
+.nav-link ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0e2334;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    z-index: 100;
+}
+
+.nav-link ul ul li {
+    float: none;
+    width: 150px;
+}
+
+.nav-link ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+.nav-link ul li:hover>ul {
+    display: block;
+}
+
+/*footer*/
+
+
+.footer {
+    background-color: #061018;
+    /*background:url(fondoFooter/fondo.jpg) repeat;*/
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 0;
+    align-self: flex-end;
+}
+
+
+.footer_logo {
+    font-size: 2;
+    padding: 60px;
+    margin-top: -80px;
+    margin-left: -30px;
+}
+
+.footer img {
+    position: absolute;
+    width: 170px;
+    margin-top: -10px;
+}
+
+.footer_text {
+    float: center;
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer_titulo {
+    float: center;
+    margin-left: 12px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*inicio*/
+
+.bg-1 {
+    background: linear-gradient(to right, rgb(97, 67, 133), rgb(81, 99, 149));
+    height: 50vh;
+    padding-top: 150px;
+}
+
+.t-stroke {
+    color: transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.t-shadow {
+    text-shadow: 7px 7px #8dffcd;
+}
+
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+}
+
+.inicio_text {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 8px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.juegos {
+    padding: 5%;
+    background: linear-gradient(to right, rgb(97, 67, 133), rgb(81, 99, 149));
+}
+
+
+.juegos .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-container {
+    width: 1500px;
+    height: 300px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+
+}
+
+.carousel-inner {
+    width: 1500px;
+    height: 200px;
+    white-space: nowrap;
+}
+
+.carousel-item {
+
+    display: inline-block;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    transition: transform 0.5s ease-in-out;
+    margin-right: 10px;
+    /* ajustar el margen derecho para eliminar el espacio */
+    padding-right: 10px;
+    /* agregar un relleno derecho para separar los elementos */
+
+}
+
+.carousel-item img {
+    width: 280px;
+    height: 250px;
+    vertical-align: top;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    transform-origin: center;
+}
+
+/*InfoJuego*/
+
+.container-titulo {
+
+    padding: 30px;
+    margin-bottom: 50px;
+    color: #dddddd;
+}
+
+.container-mainJuego {
+
+    display: flex;
+    gap: 30px;
+
+}
+
+.container-img img {
+
+    flex: 1;
+    width: 500px;
+    height: 350px;
+
+
+}
+
+.container-img2 img {
+
+    flex: 1;
+    width: 50px;
+    height: 50px;
+
+
+}
+
+#video-container {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container-juego-info {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.container-info {
+width: 50%;
+margin-top: 20px;
+}
+
+.container-button button {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+/*Style 1.css*/
+
+
+
+.content_wrapper {
+
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    margin: 0 auto;
+
+
+}
+
+.miembros_wrapper {
+    width: auto;
+    height: 2250px;
+    margin: 0 auto;
+}
+
+.content_wrapper h1 {
+    text-align: center;
+}
+
+/*h1{
+    margin-top:20px ;
+}*/
+
+.content_texto,
+.titulo {
+    padding: 29px 29px 0px;
+}
+
+.fondo {
+    background-color: #5900ff;
+
+}
+
+.diagramaG img,
+.img img {
+    width: 95%;
+    padding: 29px 29px 0px;
+
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #008CBA;
+}
+
+.button2 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+fieldset {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Enlaces de miembros*/
+.nombres {
+    left: 100px;
+    top: 200px;
+    position: fixed;
+}
+
+/*Imformaciones de miembros*/
+.informacion {
+    padding-left: 450px;
+    padding-top: 30px;
+}
+
+.boceto_background {
+    width: auto;
+    height: 2750px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    margin: 0 auto;
+}
+
+.boceto_background h1 {
+    text-align: center;
+}
+
+.logoutColor {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h-name {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Comunidad*/
+
+.titulo-comunidad {
+
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+
+
+}
+
+.comunidad-juego-container {
+    position: relative;
+    height: 60px;
+    margin: 15px 15px 20px;
+    box-shadow: 0 1px 6px 0 rgba(214, 216, 224, 0.28);
+
+}
+
+.img-comunidad-container {
+    width: 68px;
+    margin-right: 10px;
+    margin-right: 20px;
+    float: left;
+}
+
+.img-comunidad {
+    width: 71px;
+    height: 59px;
+}
+
+.titulo-container {
+    height: 59px;
+    overflow: hidden;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+a.linkComunidad a:-webkit-any-link {
+
+    color: white;
+    text-decoration: none;
+}
+
+.boton-enviar{
+
+    padding-left:10px;
+    color:#dddddd;
+    border: 2px solid #dddddd;
+    padding: 5px 10px;
+    margin-bottom: 5px;;
+    font-size: 13px;
+    text-decoration:none;
+    margin: 10px;
+}
+
+.container-input{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+/* cesta de compra */
+
+.cesta_container {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    height: 900px;
+    ;
+}
+
+#resumen_container {
+    margin: auto;
+    margin-top: 10px;
+    height: 100px;
+    ;
+    margin-left: 40px;
+}
+
+.juego_container {
+    display: flex;
+    height: 100vh;
+}
+
+.cesta_container2,
+.juego_container {
+    justify-content: center;
+    align-items: center;
+}
+
+.cesta_container2 p {
+    height: 38vh;
+}
+
+
+.cesta_container2 p,
+.vacia_container {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.vacia_container {
+    height: 56vh;
+}
+
+#btn_eliminar {
+    height: 30px;
+    width: 8%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #0763ae;
+    text-align: center;
+    font-size: 1.2em;
+    position: absolute;
+    top: 210px;
+    right: 100px;
+}
+
+#btn_eliminarFD {
+    height: 30px;
+    width: 8%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #0763ae;
+    text-align: center;
+    font-size: 1.2em;
+    position: absolute;
+    top: 150px;
+    right: 80px;
+}
+
+
+
+.btn_terminar,
+#btn_terminar {
+    border-style: none;
+    width: 20%;
+    padding: 5px;
+    height: 60px;
+    float: center;
+    justify-items: center;
+    background-color: #53a4e6;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 40%;
+}
+
+.btn_terminar a {
+    color: white;
+    text-decoration: none;
+}
+
+.button_container {
+    height: 80px;
+    padding-right: 20px;
+}
+
+h2,
+h3 {
+    font-weight: normal;
+}
+
+/* pagina de pago*/
+
+#pago_wrapper {
+    position: relative;
+    height: 120px;
+    width: 90%;
+    padding: 15px 15px 20px;
+    margin: 15px 15px 20px;
+    background-color: rgba(159, 159, 159, 0.246);
+    margin-right: 20px;
+    float: left;
+}
+
+.pago_img {
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+.pago_game_wrapper {
+    height: 80px;
+    overflow: hidden;
+}
+
+#credito_wrapper {
+    height: 300px;
+    padding: 29px 29px 40px;
+}
+
+#payment_type_wrapper {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.campo_tarjeta label,
+.campo_tarjeta div {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
